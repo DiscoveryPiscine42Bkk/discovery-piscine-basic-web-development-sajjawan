@@ -1,1 +1,1 @@
-argv.sh
+./argv.sh
