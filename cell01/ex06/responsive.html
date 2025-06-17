@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <title>Responsive Table</title>
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      width: 100vw;
+      height: 100vh;
+      min-height: 100vh;
+      min-width: 100vw;
+      margin: 0;
+      padding: 0;
+    }
+    table {
+      width: 60vw;
+      height: 80vh;
+      border-collapse: collapse;
+      table-layout: fixed;
+    }
+    td {
+      border: 2px solid #333;
+      text-align: center;
+      vertical-align: middle;
+      font-size: 2vw;
+      font-family: Arial, sans-serif;
+      word-break: break-word;
+      padding: 0;
+    }
+    .box1 {
+      background-color: #87ceeb;
+      color: #222;
+    }
+    .box2 {
+      background-color: hsla(315, 94%, 51%, 0.582);
+      color: #222;
+    }
+  </style>
+</head>
+<body>
+  <table>
+    <tr>
+      <td class="box1"> blue </td>
+      <td class="box2"> pink </td>
+    </tr>
+  </table>
+</body>
+</html>
