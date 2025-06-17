@@ -1,0 +1,26 @@
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.5s;
+  font-family: 'Quicksand', Arial, sans-serif;
+}
+
+button {
+  padding: 18px 36px;
+  font-size: 1.3rem;
+  border-radius: 16px;
+  border: none;
+  background: #81c784;
+  color: #fff;
+  cursor: pointer;
+  box-shadow: 0 4px 16px #a5d6a780;
+  transition: background 0.2s;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+button:hover {
+  background: #388e3c;
+}
