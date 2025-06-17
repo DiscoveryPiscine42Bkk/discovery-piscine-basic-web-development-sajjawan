@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>New York City Parallax Travel</title>
+  <style>
+    body, html {
+      height: 100%;
+      margin: 0;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      scroll-behavior: smooth;
+    }
+    .parallax {
+      background-image: url('https://upload.wikimedia.org/wikipedia/commons/7/7a/View_of_Empire_State_Building_from_Rockefeller_Center_New_York_City_dllu_%28cropped%29.jpg'); /* ใส่ภาพนิวยอร์กภาพแรก */
+      min-height: 100vh;
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .parallax-message {
+      background: rgba(0,0,0,0.5);
+      color: #fff;
+      padding: 32px 48px;
+      border-radius: 16px;
+      font-size: 2em;
+      text-align: center;
+      box-shadow: 0 4px 24px #0005;
+    }
+    .black-block {
+      background: #111;
+      min-height: 300px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .black-block-message {
+      color: #fff;
+      font-size: 1.5em;
+      text-align: center;
+      padding: 40px 20px;
+    }
+    .parallax2 {
+      background-image: url('https://a.travel-assets.com/findyours-php/viewfinder/images/res70/471000/471585-New-York.jpg'); /* ใส่ภาพนิวยอร์กภาพที่สอง */
+      min-height: 100vh;
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .parallax2-message {
+      background: rgba(255,255,255,0.7);
+      color: #222;
+      padding: 32px 48px;
+      border-radius: 16px;
+      font-size: 2em;
+      text-align: center;
+      box-shadow: 0 4px 24px #0003;
+    }
+    @media (max-width: 700px) {
+      .parallax-message, .parallax2-message {
+        font-size: 1.2em;
+        padding: 16px 10px;
+      }
+      .black-block-message {
+        font-size: 1em;
+        padding: 20px 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="parallax">
+    <div class="parallax-message">
+      Welcome to New York City!<br>
+      The city that never sleeps.
+    </div>
+  </div>
+  <div class="black-block">
+    <div class="black-block-message">
+      Explore Central Park, Times Square, and the Statue of Liberty.<br>
+      Enjoy the vibrant life and endless attractions of NYC!
+    </div>
+  </div>
+  <div class="parallax2">
+    <div class="parallax2-message">
+      Thank you for visiting New York City.<br>
+      Have a great trip!
+    </div>
+  </div>
+</body>
+</html>
