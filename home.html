@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Profile</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+            padding-bottom: 2rem;
+        }
+        
+        .header {
+            background-color: #ff8c00;
+            color: white;
+            padding: 1.5rem 1rem;
+            text-align: center;
+        }
+
+.school-name {
+            font-size: 2.2rem;
+            font-weight: 700;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+            margin: 0;
+        }
+        
+        .content-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+        
+        .school-description {
+            padding: 2rem 0;
+            font-size: 1.2rem;
+            text-align: center;
+            border-bottom: 1px solid #eee;
+            margin-bottom: 2rem;
+        }
+
+.profiles-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 3rem; /* ลดระยะห่างระหว่างโปรไฟล์ */
+            padding: 2rem 1rem; /* ลด padding */
+            flex-wrap: wrap;
+        }
+        
+        .profile {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 250px; /* ลดความกว้างของ container */
+        }
+
+ /* ปรับขนาดรูปโปรไฟล์ให้เล็กลง */
+        .profile-image {
+            width: 180px; /* ลดจาก 300px */
+            height: 180px; /* ลดจาก 300px */
+            border-radius: 50%;
+            object-fit: cover;
+            border: 6px solid white; /* ลดความหนาของกรอบ */
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* ลดเงา */
+            margin-bottom: 1.5rem; /* ลดระยะห่าง */
+        }
+        
+        /* ปรับขนาดฟอนต์ให้เล็กลง */
+        .profile-name {
+            font-size: 1.4rem; /* ลดจาก 1.8rem */
+            font-weight: 600;
+            margin-bottom: 0.5rem; /* ลดระยะห่าง */
+            color: #444;
+            text-align: center;
+        }
+
+.profile-role {
+            color: #666;
+            margin-bottom: 1.5rem; /* ลดจาก 2rem */
+            font-size: 1rem; /* ลดจาก 1.2rem */
+            text-align: center;
+        }
+        
+        .upload-container {
+            text-align: center;
+            margin-top: 1rem;
+        }
+        
+        .file-input {
+            display: none;
+        }
+
+.upload-button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 0.8rem 1.5rem; /* ลดขนาดปุ่ม */
+            border-radius: 5px;
+            font-size: 0.9rem; /* ลดขนาดฟอนต์ปุ่ม */
+            cursor: pointer;
+            display: inline-block;
+        }
+        
+        .file-name {
+            margin-top: 0.5rem;
+            font-size: 0.8rem; /* ลดขนาดฟอนต์ */
+            color: #666;
+        }
+        
+        @media (max-width: 900px) {
+            .profiles-container {
+                gap: 2rem; /* ลดระยะห่างบน tablet */
+            }
+        }
+
+@media (max-width: 768px) {
+            .profiles-container {
+                flex-direction: column;
+                gap: 2.5rem; /* ลดระยะห่างบน mobile */
+            }
+            
+            .school-name {
+                font-size: 1.8rem;
+            }
+            
+            /* ปรับขนาดโปรไฟล์บน mobile */
+            .profile-image {
+                width: 150px;
+                height: 150px;
+            }
+            
+            .profile-name {
+                font-size: 1.2rem;
+            }
+        }
+</style>
+</head>
+<body>
+    <header class="header">
+        <h1 class="school-name">โรงเรียนสวนกุหลาบวิทยาลัย</h1>
+    </header>
+    
+    <div class="content-container">
+        <div class="school-description">
+            โรงเรียนสวนกุหลาบวิทยาลัย เป็นโรงเรียนรัฐบาลชายล้วน สังกัดสำนักงานคณะกรรมการการศึกษาขั้นพื้นฐาน กระทรวงศึกษาธิการ 
+            ก่อตั้งขึ้นเมื่อปี พ.ศ. 2425 โดยพระบาทสมเด็จพระจุลจอมเกล้าเจ้าอยู่หัว ถือเป็นโรงเรียนรัฐบาลแห่งแรกของประเทศไทย
+        </div>
+        
+        <div class="profiles-container">
+            <div class="profile">
+                <img src="https://images.unsplash.com/photo-1577896851231-70ef18881754?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" 
+                     alt="Principal" class="profile-image">
+                <h3 class="profile-name">ดร. สมชาย ใจดี</h3>
+                <p class="profile-role">ผู้อำนวยการโรงเรียน</p>
+                <div class="upload-container">
+                    <label for="file-upload-1" class="upload-button">เลือกไฟล์</label>
+                    <input id="file-upload-1" type="file" class="file-input">
+                    <div class="file-name" id="file-name-1"></div>
+                </div>
+            </div>
+
+ <div class="profile">
+                <img src="https://images.unsplash.com/photo-1568602471122-7832951cc4c5?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" 
+                     alt="Student" class="profile-image">
+                <h3 class="profile-name">นายนักเรียน ตัวอย่าง</h3>
+                <p class="profile-role">นักเรียนดีเด่นประจำปี</p>
+                <div class="upload-container">
+                    <label for="file-upload-2" class="upload-button">เลือกไฟล์</label>
+                    <input id="file-upload-2" type="file" class="file-input">
+                    <div class="file-name" id="file-name-2"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        // Function to show selected file name
+        function setupFileInput(inputId, displayId) {
+            const fileInput = document.getElementById(inputId);
+            const fileNameDisplay = document.getElementById(displayId);
+
+fileInput.addEventListener('change', function() {
+                if (this.files.length > 0) {
+                    fileNameDisplay.textContent = this.files[0].name;
+                }
+            });
+        }
+        
+        // Initialize file inputs
+        setupFileInput('file-upload-1', 'file-name-1');
+        setupFileInput('file-upload-2', 'file-name-2');
+    </script>
+</body>
+</html>
