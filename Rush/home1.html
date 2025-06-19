@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ภาพรวมโปรไฟล์</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        
+        h1 {
+            color: #333;
+            margin-bottom: 40px;
+            text-align: center;
+            font-size: 2.5rem;
+        }
+        
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            max-width: 1000px;
+            width: 100%;
+        }
+        
+        .profile-summary {
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            padding: 30px;
+            text-align: center;
+            transition: all 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .profile-summary:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+        }
+        
+        .profile-img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #fff;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+        
+        .profile1 .profile-img {
+            border-color: #ff9a9e;
+        }
+        
+        .profile2 .profile-img {
+            border-color: #a1c4fd;
+        }
+        
+        .name {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 5px;
+        }
+        
+        .title {
+            color: #666;
+            font-size: 1rem;
+            margin-bottom: 15px;
+        }
+        
+        .short-bio {
+            color: #555;
+            font-size: 0.9rem;
+            line-height: 1.5;
+            margin-bottom: 20px;
+        }
+        
+        .view-btn {
+            display: inline-block;
+            padding: 10px 25px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            margin-top: auto;
+        }
+        
+        .profile1 .view-btn {
+            background: linear-gradient(45deg, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%);
+            color: white;
+        }
+        
+        .profile2 .view-btn {
+            background: linear-gradient(45deg, #a1c4fd 0%, #c2e9fb 100%);
+            color: white;
+        }
+        
+        .view-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .profile-summary {
+                width: 100%;
+                max-width: 350px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง</h1>
+    
+    <div class="container">
+        <!-- สรุปโปรไฟล์ 1 -->
+        <div class="profile-summary profile1">
+            <img src="profile.jpg" class="profile-img">
+            <h2 class="name">สัจวรรณ ณะอำภัย</h2>
+            <p class="title">นักศึกษา</p>
+            <a href="friend1.html" class="view-btn">ดูโปรไฟล์</a>
+        </div>
+        
+        <!-- สรุปโปรไฟล์ 2 -->
+        <div class="profile-summary profile2">
+            <img src="pic2.jpg" class="profile-img">
+            <h2 class="name">ปราณปรียา อุ่นทรพันธุ์</h2>
+            <p class="title">นักศึกษา</p>
+            <a href="friend2.html" class="view-btn">ดูโปรไฟล์</a>
+        </div>
+    </div>
+
+    <script>
+        // ระบบ routing เบื้องต้น
+        document.addEventListener('DOMContentLoaded', function() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const profileId = urlParams.get('profile');
+            
+            if (profileId) {
+                console.log(`กำลังโหลดโปรไฟล์ ${profileId}`);
+                // ในแอปจริง คุณจะโหลดข้อมูลโปรไฟล์ที่เหมาะสมที่นี่
+            }
+        });
+    </script>
+</body>
+</html>
+```

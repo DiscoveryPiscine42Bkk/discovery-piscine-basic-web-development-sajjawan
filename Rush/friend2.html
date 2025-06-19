@@ -1,0 +1,168 @@
+   <!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ประวัติความเป็นมา</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500&family=Mitr:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #487eb0;
+            --text-color: #2f3640;
+            --light-text: #7f8fa6;
+            --bg-color: #f5f6fa;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Mitr', sans-serif;
+        }
+
+body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        .profile-container {
+            background: white;
+            border-radius: 20px;
+            width: 100%;
+            max-width: 500px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            text-align: center;
+            padding-bottom: 30px;
+        }
+        .profile-header {
+            background: linear-gradient(135deg, #487eb0, #40739e);
+            padding: 30px 0;
+            margin-bottom: 20px;
+            position: relative;
+        }
+
+.profile-image {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 5px solid white;
+            object-fit: cover;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            margin-bottom: 15px;
+        }
+        .profile-name {
+            font-size: 1.8rem;
+            color: white;
+            font-family: 'Kanit', sans-serif;
+            margin-bottom: 5px;
+        }
+        .profile-title {
+            font-size: 1.1rem;
+            color: rgba(255, 255, 255, 0.9);
+            margin-bottom: 15px;
+        }
+
+.ig-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            color: white;
+            text-decoration: none;
+            margin-bottom: 20px;
+            padding: 8px 15px;
+            background: rgba(255,255,255,0.2);
+            border-radius: 30px;
+            transition: all 0.3s;
+        }
+        .ig-link:hover {
+            background: rgba(255,255,255,0.3);
+        }
+        .ig-link i {
+            font-size: 1.2rem;
+        }
+        .section {
+            padding: 0 30px;
+            margin-bottom: 25px;
+            text-align: left;
+        }
+
+ .section-title {
+            font-size: 1.3rem;
+            color: var(--primary-color);
+            margin-bottom: 15px;
+            font-family: 'Kanit', sans-serif;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 5px;
+        }
+        .education-info {
+            margin-bottom: 10px;
+            line-height: 1.6;
+        }
+        .faculty {
+            font-weight: 500;
+            color: var(--text-color);
+        }
+        .major {
+            color: var(--primary-color);
+        }
+
+.university {
+            color: var(--light-text);
+            font-size: 0.95rem;
+        }
+        @media (max-width: 480px) {
+            .profile-header {
+                padding: 25px 0;
+            }
+            
+            .profile-image {
+                width: 120px;
+                height: 120px;
+            }
+            
+            .profile-name {
+                font-size: 1.5rem;
+            }
+
+.section {
+                padding: 0 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="profile-container">
+        <div class="profile-header">
+            <img src="pic2.jpg" alt="โปรไฟล์เพื่อน" class="profile-image">
+            <h1 class="profile-name">ปราณปรียา อุ่นทรพันธุ์</h1>
+            <p class="profile-title">นักศึกษาปริญญาตรี</p>
+            <a href="https://www.instagram.com/tkkytkk?igsh=MXdiejFxangxb29lZA==" target="_blank" class="ig-link">
+                <i class="fab fa-instagram"></i>
+                @tkkytkk
+            </a>
+        </div>
+
+<!-- ข้อมูลคณะและสาขา -->
+        <div class="section">
+            <h2 class="section-title">ข้อมูลการศึกษา</h2>
+            <div class="education-info">
+                <div class="faculty">คณะครุศาสตร์อุตสาหกรรมและเทคโนโลยี</div>
+                <div class="major">สาขาวิชาออกแบบสภาพแวดล้อมภายใน</div>
+                <div class="university">สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง</div>
+            </div>
+        </div>
+        <!-- ข้อมูลเพิ่มเติม -->
+        <div class="section">
+            <h2 class="section-title">รายละเอียดสาขา</h2>
+            <p>เป็นหลักสูตร 5 ปี ที่บูรณาการความรู้ด้านการเป็นครู และความรู้ด้านการออกแบบสภาพแวดล้อมภายใน (สถาปัตยกรรมภายใน และมัณฑนศิลป์) เพื่อผลิตบุคลากรที่มีความรู้ทั้งภาคทฤษฎีและการปฏิบัติ </p>
+        </div>
+    </div>
+</body>
+</html>
