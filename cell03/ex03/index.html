@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Mini Task Manager</title>
+  <style>
+    body {
+      background: #ffffcc;
+      min-height: 100vh;
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 0;
+      padding: 0;
+    }
+    #new-btn {
+      margin: 40px 0 20px 0;
+      padding: 10px 28px;
+      font-size: 1.1rem;
+      border-radius: 12px;
+      border: none;
+      background: #ffcc66;
+      color: #000000;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+    #new-btn:hover {
+      background: #f9ffb3;
+    }
+    #ft_list {
+      background: #fff;
+      border-radius: 16px;
+      box-shadow: 0 4px 24px #e3ff7280;
+      min-width: 320px;
+      min-height: 80px;
+      padding: 18px 0;
+      display: flex;
+      flex-direction: column-reverse;
+      gap: 10px;
+      align-items: stretch;
+    }
+    .todo {
+      background: #ffffcc;
+      margin: 0 18px;
+      padding: 12px 18px;
+      border-radius: 10px;
+      font-size: 1.1rem;
+      color: #000000;
+      cursor: pointer;
+      box-shadow: 0 2px 8px #d9ff9240;
+      transition: background 0.2s;
+      word-break: break-word;
+    }
+    .todo:hover {
+      background: #ffffcc;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <button id="new-btn">to do list</button>
+  <div id="ft_list"></div>
+  <script src="todo.js"></script>
+</body>
+</html>
